@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+/* Colocar um header que direcione para cada parte do site.*/
+
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+canvas{
+    z-index: 0;
+}
+
+/* Alguns do parametros comentados foram para efeitos de teste, 
+se quiser pode apagar ou re-usar */
+/* PAra fazer funcionar o canvas em toda a página temos que selecionar todos
+os divs dentro do conainter, só assim é que o canvas funciona com os objetos 
+em cima deste, daí estar index:1 */
+
+.background{
+    background: rgba(24, 26, 27, 0.011);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    /* opacity: 0.3; */
+    /* right: 0;
+    bottom: 0; */
+    /* height: 80vh; */
+    /* background-size: cover; */
+}
+
+
+.canvas-title {
+    background: rgb(24, 26, 27);
+    color: #fff;
+    font-size: 500%;
+    text-align: center;
+    top: 50vh;
+    left: 50vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    /* width: 100%; */
+    /* z-index: 3; */
+    /* opacity: 200%; */
+    /* opacity: 1; */
+    z-index: 10;   
+}
+
+#espacos-title{
+    background-color: #181A1B;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    height: 175px;
+}
+
+.espaços {
+    background-color: #181a1b00;
+    position: relative;
+    display: flex;
+    height: 750px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+}
+
+.espaços .content {
+    display: block;
+    top: 0px;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.espaços .space {
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: flex 1s ease;
+}
+
+.espaços .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+.espaços:hover .title {
+    opacity: 0;
+}
+
+.espaços .space:hover {
+    flex: 2;
+}
+
+.espaços .space:hover .content {
+    display: block;
+    opacity: 1;
+    
+}
+
+.Campo_Grande .content{
+    text-align: left;
+}
+.Braço_Prata .content {
+    text-align: right;
+}
+
+#atividades-title{
+    background-color: #181A1B;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    height: 175px;
+}
+
+.atividades {
+    background-color: #181a1b00;
+    position: relative;
+    display: flex;
+    height: 750px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+}
+
+.atividades .space {
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: flex 1s ease;
+}
+
+.atividades .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.atividades:hover .title {
+    opacity: 0;
+}
+
+.atividades .space:hover {
+    flex: 2;
+}
+
+.atividades .space:hover .content {
+    display: block;
+    opacity: 1;
+}
+
+.atividades .content {
+    display: block;
+    top: 0px;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#FAQ-title{
+    background-color: #181A1B;
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    height: 175px;
+}
+
+.FAQ{
+    background-color: #181a1b00;
+    position: relative;
+    display: flex;
+    height: 750px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+}
+
+.title{
+    color: #fff;
+    z-index: 1000000;
+}

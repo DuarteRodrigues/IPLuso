@@ -1,0 +1,138 @@
+#escolas-title{
+    background-color: #181a1b00;
+    color: #ffffff;
+    font-size: 100px;
+    height: 175px;
+    text-align: center;
+    z-index: 10;
+}
+
+.escolas div{
+    z-index: 2;
+}
+.escolas{
+    background: rgba(24, 26, 27, 0);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 850px;
+    width: 100%;
+    }
+
+.escolas .content {
+    display: block;
+    top: 0px;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.75s ease;
+}
+
+.escolas .title {
+    color: white;
+    font-size: 50px;
+    left: 50%;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    text-shadow: 2px 2px #0D0D0D;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    transition: text-shadow 0.3s ease;
+}
+
+.escolas .space {
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1.5;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: flex 0.55s ease;
+    position: relative;
+}
+
+.escolas .space:hover {
+    flex: 2;
+}
+
+/* .escolas .clicked{
+    background-color: white;
+} */
+
+.escolas .space.clicked{
+    flex: 8;
+}
+
+.escolas .space.clicked .title{
+    opacity: 0;
+}
+
+.escolas .space.clicked .content{
+    opacity: 1;
+}
+
+.escolas .content{
+    text-shadow: 2px 2px #0D0D0D;
+}
+
+.content p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.ECIA {
+    background-color: #FBF8CF;
+}
+.ECIA:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+  
+.EET {
+    background-color: #FFAA96;
+}
+
+.EET:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+
+.ERISA {
+    background-color: #A7D18F;
+}
+
+.ERISA:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+
+.ESCAD {
+    background-color: #6E5299;
+}
+
+.ESCAD:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+  
+.ESEL {
+    background-color: #89CFF0;
+}
+
+.ESEL:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+
+.ESPA {
+    background-color: red;
+}
+
+.ESPA:hover .title {
+    text-shadow: 4px 4px #0D0D0D;
+}
+
+@media screen and (min-width: 960px)  {
+    .escolas{
+        flex-direction: row;
+    }
+}

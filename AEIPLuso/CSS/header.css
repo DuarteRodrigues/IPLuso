@@ -1,0 +1,70 @@
+header {
+    align-items: center;
+    background-color: #000000;
+    height: auto;
+    left: 0;
+    margin: auto;
+    top: 0;
+    width: 100%;
+}
+
+header .Header-Container{
+    align-items: baseline;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .Header-Logo{
+    align-items: center;
+    height: auto;
+    margin-left: 20px;
+}
+.Logo{
+    height: 100px;
+}
+
+header ul{
+    display: flex;
+
+    list-style: none;
+}
+
+header .Header-Buttons{
+    background-color: #000000;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+    width: 50px;
+}
+
+
+
+header #Button-Escolas:hover{
+    color: #fbf8cf;
+}
+
+header #Button-Espaços:hover{
+    color: #ffa996;
+}
+
+header #Button-Atividades:hover{
+    color: #A7D18F;
+}
+
+header #Button-FAQ:hover{
+    color: #6E5299;
+}
+
+header #Button-Regulamentos:hover{
+    color: #89CFF0;
+}
+
+header #Button-Footer:hover{
+    color: red;
+}
